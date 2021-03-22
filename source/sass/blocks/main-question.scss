@@ -1,3 +1,10 @@
+.main-question {
+  &--top {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 .main-question__title {
   padding: 0 $mobile-page-padding;
   margin: 0 0 23px;
