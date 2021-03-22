@@ -1,0 +1,28 @@
+.title {
+  &--main {
+    font-size: 16px;
+    line-height: 25px;
+    color: $basic-orange;
+    text-transform: uppercase;
+  }
+
+  &--note {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: rgba($basic-white, 0.6);
+  }
+
+  @media #{$desktop} {
+    &--main {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    &--note {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

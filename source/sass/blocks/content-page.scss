@@ -1,0 +1,17 @@
+.content-page__main-question {
+  margin: 0 0 38px;
+
+  &--bottom {
+    margin: 0 0 39px;
+  }
+
+  @media #{$desktop} {
+    &--bottom {
+      margin: 0 0 106px;
+    }
+  }
+}
+
+.content-page__description {
+  margin: 0 0 53px;
+}

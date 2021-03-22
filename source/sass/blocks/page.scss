@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+
+  font-weight: 400;
+  font-size: 20px;
+  font-family: $basic-font;
+  background-color: $basic-black;
+}
+
+.page__body {
+  position: relative;
+
+  min-width: 320px;
+  min-height: 100%;
+  text-align: center;
+}

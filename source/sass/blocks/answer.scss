@@ -1,0 +1,81 @@
+.answer {
+  padding: 24px 30px 18px;
+
+  font-size: 14px;
+
+  @media #{$desktop} {
+    padding: 53px 30px;
+  }
+}
+
+.answer__message {
+  margin: 0 0 28px;
+  padding: 6px 14px;
+
+  line-height: 18px;
+
+  @include message(10px, 5px, 20px);
+
+  @media #{$desktop} {
+    margin: 0 0 36px;
+    padding: 11px 17px;
+
+    font-size: 25px;
+    line-height: 35px;
+
+    @include message (20px, 10px, 40px);
+  }
+}
+
+.answer__accent {
+  font-weight: 700;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.answer__desc {
+  max-width: 233px;
+  margin: 0 auto 20px;
+
+  font-weight: 300;
+  color: $basic-white;
+
+  @media #{$desktop} {
+    max-width: 422px;
+    margin: 0 auto 35px;
+
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.answer__main-info {
+  margin: 0 0 20px;
+  padding: 14px;
+
+  font-size: 16px;
+  line-height: 25px;
+  color: $basic-orange;
+
+  border: 1px solid $basic-white;
+  border-radius: 3px;
+
+  @media #{$desktop} {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 30px;
+    padding: 64px 43px 38px;
+  }
+}
+
+.answer__button {
+  min-width: 238px;
+  padding: 16px;
+
+  @media #{$desktop} {
+    min-width: 402px;
+    padding: 23px;
+  }
+}

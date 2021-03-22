@@ -1,0 +1,138 @@
+$eye-2-height-mobile: 44px;
+$eye-2-height-tablet: 115px;
+$eye-2-height-desktop: 170px;
+
+.footer {
+  position: relative;
+  padding: ($eye-2-height-mobile / 2) 0 0;
+
+  overflow-x: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+  }
+
+  &::before {
+    top: 0;
+    right: -30px;
+    width: 84px;
+    height: $eye-2-height-mobile;
+    background: url("../img/eye-2.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    top: 160px;
+    left: -16px;
+    width: $eye-1-size-mobile;
+    height: $eye-1-size-mobile;
+    background: url("../img/eye-1.svg") no-repeat;
+    background-size: cover;
+  }
+
+  @media #{$tablet} {
+    padding: ($eye-2-height-tablet / 2) 0 0;
+
+    &::before {
+      width: 200px;
+      height: $eye-2-height-tablet;
+    }
+
+    &::after {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media #{$desktop} {
+    padding: ($eye-2-height-desktop / 2) 0 152px;
+
+    &::before {
+      right: -120px;
+      width: 296px;
+      height: $eye-2-height-desktop;
+    }
+
+    &::after {
+      top: 320px;
+      left: -40px;
+
+      width: 164px;
+      height: 164px;
+    }
+  }
+
+  @media #{$big-desktop} {
+    &::before {
+      right: calc(50% - 900px);
+    }
+
+    &::after {
+      left: calc(50% - 700px);
+    }
+  }
+}
+
+.footer__desc {
+  margin: 0 0 70px;
+  padding: 0 43px;
+
+  font-size: 20px;
+  line-height: 28px;
+  font-family: $decor-font;
+  color: $basic-white;
+
+  &::before,
+  &::after {
+    content: "";
+
+    display: block;
+    width: 33px;
+    height: 10px;
+  }
+
+  &::before {
+    margin: 0 auto 37px;
+
+    background: url("../img/rune-1.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &::after {
+    margin: 33px auto 0;
+
+    background: url("../img/rune-2.svg") no-repeat;
+    background-size: cover;
+  }
+
+  @media #{$desktop} {
+    font-size: 25px;
+    line-height: 35px;
+
+    margin: 0;
+
+    &::before,
+    &::after {
+      width: 56px;
+      height: 18px;
+    }
+
+    &::before {
+      margin: 0 auto 80px;
+    }
+
+    &::after {
+      margin: 80px auto 0;
+    }
+  }
+}
+
+.footer__note {
+  @media #{$desktop} {
+    display: none;
+  }
+}

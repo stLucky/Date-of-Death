@@ -1,0 +1,30 @@
+// Colors
+$basic-orange: #f6c866;
+$basic-black: #202024;
+$black-400: #000000;
+$basic-white: #ffffff;
+$basic-grey: #9d9d9d;
+
+
+// Fonts
+$basic-font: "Roboto", "Arial", sans-serif;
+$decor-font: "Bad Script", "Papyrus", fantasy;
+
+
+// Width
+$max-mobile-width: 320px;
+$max-desktop-width: 516px;
+
+
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$big-desktop-width: 1920px;
+$tablet: "(min-width: #{$tablet-width})";
+$desktop: "(min-width: #{$desktop-width})";
+$big-desktop: "(min-width: #{$big-desktop-width})";
+
+// Other
+$mobile-page-padding: 13px;
+$eye-1-size-mobile: 52px;
+$transition-duration: 200ms;

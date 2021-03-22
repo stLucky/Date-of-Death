@@ -1,0 +1,61 @@
+.popup-card {
+  padding: 20px;
+
+  background-color: $basic-white;
+  border-radius: 20px;
+}
+
+.popup-card__title {
+  margin: 0 0 20px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.popup-card__parameters {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  @include list;
+
+  margin: 0 0 20px;
+}
+
+.popup-card__parameter {
+  margin: 0 0 5px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.popup-card__sub-list {
+  @include list;
+  padding: 10px 15px;
+}
+
+.popup-card__sub-item {
+  margin: 0 0 5px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.popup-card__time-wrap {
+  color: $basic-grey;
+  text-align: left;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0 0 10px;
+}
+
+.popup-card__url {
+  font-size: 14px;
+  line-height: 16px;
+}
+

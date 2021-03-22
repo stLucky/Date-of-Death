@@ -1,0 +1,106 @@
+$arrow-size-mobile: 6px;
+$arrow-size-desktop: 10px;
+
+.button {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 179px;
+  padding: 12px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  border-radius: 50px;
+  transition: opacity $transition-duration;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--main {
+    color: $basic-white;
+
+    background-image: linear-gradient(90deg, rgba(246, 200, 102, 0.9) -6%, rgba(254, 173, 53, 0.9) 100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 50%;
+
+      background-image: linear-gradient(248deg, rgba(255, 255, 255, 0) 31%, rgba(255, 255, 255, 0.29) 46%, rgba(255, 255, 255, 0) 64%);
+
+      animation-name: button;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &--select {
+    position: relative;
+
+    padding: 12px (12px + $arrow-size-mobile * 3) 12px (12px + $arrow-size-mobile * 3);
+    color: $basic-black;
+
+    background-image: linear-gradient(to top, #e4e4e4 30%, #cbcbcb 100%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0 + 12px;
+      transform: translate(-50%, -50%);
+      border-top: $arrow-size-mobile - 2px solid $basic-black;
+      border-right: $arrow-size-mobile solid transparent;
+      border-left: $arrow-size-mobile solid transparent;
+      border-bottom: none;
+    }
+  }
+
+  &--greenery {
+    background-image: linear-gradient(90deg, #4CD964 -6%, #4CD964 100%);
+
+    &::before {
+      background-image: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);
+    }
+  }
+
+  @media #{$desktop} {
+    min-width: 316px;
+    padding: 23px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &--select {
+      padding: 23px (23px + $arrow-size-desktop * 3) 23px (23px + $arrow-size-desktop * 3);
+
+      &::after {
+        border-top: $arrow-size-desktop - 2px solid $basic-black;
+        border-right: $arrow-size-desktop solid transparent;
+        border-left: $arrow-size-desktop solid transparent;
+      }
+    }
+  }
+}
+
+@keyframes button {
+  from {
+    transform: translateX(-25%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}

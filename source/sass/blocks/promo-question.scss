@@ -1,0 +1,96 @@
+$animation-time: 6s;
+
+.promo-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 124px;
+  padding: 22px;
+  overflow-x: hidden;
+
+  border-bottom: 1px solid rgba($basic-white, 0.2);
+
+  @media #{$desktop} {
+    min-height: 224px;
+    padding: 48px 48px 37px;
+  }
+}
+
+.promo-question__desc {
+  position: relative;
+
+  max-width: 235px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $decor-font;
+  color: rgba($basic-white, 0.6);
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -65px;
+    bottom: -15px;
+
+    width: 84px;
+    height: 50px;
+
+    background: url("../img/eye-2.svg") no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+  }
+
+  &--message {
+    padding: 22px 12px;
+
+    @include message (10px, 5px, 20px);
+    animation: message $animation-time;
+
+    &::before {
+      animation: arrow $animation-time;
+    }
+  }
+
+  @media #{$desktop} {
+    max-width: 412px;
+
+    font-size: 25px;
+    line-height: 35px;
+
+    &::after {
+      right: -110px;
+      bottom: -20px;
+
+      width: 146px;
+      height: 80px;
+    }
+
+    &--message {
+      padding: 35px;
+
+      @include message (20px, 10px, 40px);
+    }
+  }
+}
+
+@keyframes message {
+  from {
+    background-color: transparent;
+
+  }
+
+  to {
+    background-color: $basic-white;
+  }
+}
+
+@keyframes arrow {
+  from {
+    border-top-color: transparent;
+  }
+
+  to {
+    border-top-color: $basic-white;
+  }
+}
