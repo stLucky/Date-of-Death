@@ -14,6 +14,7 @@ $arrow-size-desktop: 10px;
   line-height: 16px;
 
   border-radius: 50px;
+
   transition: opacity $transition-duration;
 
   &:hover {
@@ -51,6 +52,7 @@ $arrow-size-desktop: 10px;
     position: relative;
 
     padding: 12px (12px + $arrow-size-mobile * 3) 12px (12px + $arrow-size-mobile * 3);
+
     color: $basic-black;
 
     background-image: linear-gradient(to top, #e4e4e4 30%, #cbcbcb 100%);
@@ -60,16 +62,17 @@ $arrow-size-desktop: 10px;
       position: absolute;
       top: 50%;
       right: 0 + 12px;
-      transform: translate(-50%, -50%);
+
       border-top: $arrow-size-mobile - 2px solid $basic-black;
       border-right: $arrow-size-mobile solid transparent;
-      border-left: $arrow-size-mobile solid transparent;
       border-bottom: none;
+      border-left: $arrow-size-mobile solid transparent;
+      transform: translate(-50%, -50%);
     }
   }
 
   &--greenery {
-    background-image: linear-gradient(90deg, #4CD964 -6%, #4CD964 100%);
+    background-image: linear-gradient(90deg, #4cd964 -6%, #4cd964 100%);
 
     &::before {
       background-image: linear-gradient(248.67deg, rgba(255, 255, 255, 0) 30.84%, rgba(255, 255, 255, 0.29) 46.06%, rgba(255, 255, 255, 0) 64.04%);

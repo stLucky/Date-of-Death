@@ -27,9 +27,8 @@
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
-    // "editorconfig": "editorconfig-cli",
-    // "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    // "test": "npm run editorconfig && npm run stylelint",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "build": "gulp build",
     "start": "gulp"
   },
