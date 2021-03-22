@@ -1,3 +1,3 @@
-![Project test & build](https://github.com/stLucky/Cat-Energy/workflows/Project%20test%20&%20build/badge.svg)
+[![Project test & build](https://github.com/stLucky/Date-of-Death/actions/workflows/main.yml/badge.svg)](https://github.com/stLucky/Date-of-Death/actions/workflows/main.yml)
 # Тестовое в ABCMobile
 https://stlucky.github.io/Date-of-Death/
