@@ -27,7 +27,6 @@
     "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "build": "gulp build",
     "start": "gulp"
@@ -36,14 +35,6 @@
     "last 2 versions",
     "not dead",
     "not ie <= 11"
-  ],
-  "editorconfig-cli": [
-    "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "14.15.0"
